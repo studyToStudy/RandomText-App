@@ -33,6 +33,7 @@ body {
 
 #dynamic {
   position: relative;
+  display: inline-block;
 }
 
 #dynamic::after {
@@ -40,8 +41,12 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -15px;
   width: 4px;
   height: 100%;
   background-color: white;
+}
+
+#dynamic.active::after {
+  display: none;
 }
